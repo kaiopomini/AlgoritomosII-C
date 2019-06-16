@@ -80,22 +80,18 @@ int main(){
 	
 	setlocale(LC_ALL, "Portuguese");
 	
-	livro cadastro [maximoCad];
+	struct livro cadastro [maximoCad];
 	int count, opc, i, pos;
 	char temp[50];
 	
 	opc = -1;
 			
-	
-	
 	for (i=0; i<maximoCad; i++){  // atribui 0 em todas as posições de cadastro.codigo para controle de informações, sabendo que todos começam com 0 posso trabalhar para encontrar a posição vazia e a cheia
 		cadastro[i].codigo = 0;
 	}
 
-	
 	while (opc != 0){
 				
-		
 		printf("-------------------------------\n");
 		printf("--------- CADBOOK BETA --------\n");
 		printf("-------------------------------\n\n");		
@@ -110,8 +106,11 @@ int main(){
 		switch (opc){
 			
 			case 0:  // Sair 
-				
-				printf("OBRIGADO POR USAR O CADBOOK\n\n");
+			
+				printf("-------------------------------\n");
+				printf("------ OBRIGADO POR USAR ------\n");
+				printf("--------- CADBOOK BETA --------\n");
+				printf("-------------------------------\n\n");
 				system("pause");
 				
 				break;
@@ -127,7 +126,7 @@ int main(){
 					fflush(stdin);	
 					printf("Digite o titulo do livro: ");					
 					gets(cadastro[pos].titulo);
-					strcpy(cadastro[pos].titulo, getStringOk(cadastro[pos].titulo));  // chama a função getStringOk que caso seja informado "" (vazio - apenas apertar ENTER) ele retorna "Não Informado"
+					strcpy(cadastro[pos].titulo, getStringOk(cadastro[pos].titulo));  // chama a função getStringOk que caso seja informado "" (vazio - apenas apertar ENTER) ela retorna "Não Informado"
 					printf("\nDigite o nome do autor: ");
 					gets(cadastro[pos].autor);
 					strcpy(cadastro[pos].autor, getStringOk(cadastro[pos].autor));
@@ -155,7 +154,7 @@ int main(){
 					
 					for (i=0; i<maximoCad; i++){
 							
-						if (cadastro[i].codigo != 0){
+						if (cadastro[i].codigo != 0){  // Só mostra se Código não for 0
 										
 							printf("CODIGO:   %d", cadastro[i].codigo );
 							printf("\nTITULO:   %s", cadastro[i].titulo);
