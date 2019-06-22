@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>  // cls();
-#include <cstdlib>  // system ("pause");
 #include <locale.h>  // pt-br
 #include <string.h>  // trabalhar com string
 
@@ -92,9 +91,9 @@ int main(){
 
 	while (opc != 0){
 				
-		printf("-------------------------------\n");
-		printf("--------- CADBOOK BETA --------\n");
-		printf("-------------------------------\n\n");		
+		printf("--------------------------------\n");
+		printf("--------- CADBOOK BETA ---------\n");
+		printf("--------------------------------\n\n");		
 		printf("\n1 - CADASTRAR LIVRO");
 		printf("\n2 - LISTAR LIVROS");
 		printf("\n0 - SAIR");
@@ -107,10 +106,10 @@ int main(){
 			
 			case 0:  // Sair 
 			
-				printf("-------------------------------\n");
-				printf("------ OBRIGADO POR USAR ------\n");
-				printf("--------- CADBOOK BETA --------\n");
-				printf("-------------------------------\n\n");
+				printf("--------------------------------\n");
+				printf("------ OBRIGADO POR USAR -------\n");
+				printf("--------- CADBOOK BETA ---------\n");
+				printf("--------------------------------\n\n");
 				system("pause");
 				
 				break;
