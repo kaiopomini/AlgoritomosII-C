@@ -15,8 +15,7 @@ struct livro {
 
 int main(){
 	livro cadastro [MAX];
-	int count, opc, i;
-	bool achou;
+	int count, opc;
 	count = 0;
 		
 	setlocale(LC_ALL, "Portuguese");
@@ -63,7 +62,7 @@ int main(){
 			
 			case 2:
 				if (count > 0){	
-					for (i=0; i<count; i++){						
+					for (int i=0; i<count; i++){						
 						printf("CODIGO: %d", cadastro[i].codigo );
 						printf("\nTITULO: %s", cadastro[i].titulo);
 						printf("\nAUTOR: %s", cadastro[i].autor);						
