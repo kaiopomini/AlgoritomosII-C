@@ -14,7 +14,7 @@ struct livro {
 
 
 int main(){
-	livro cadastro [MAX];
+	struct livro cadastro [MAX];
 	int count, opc;
 	count = 0;
 		
