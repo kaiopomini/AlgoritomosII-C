@@ -81,7 +81,7 @@ int main(){
 	
 	struct livro cadastro [maximoCad];
 	int count, opc, i, pos;
-	char temp[50];
+	
 	
 	opc = -1;
 			
